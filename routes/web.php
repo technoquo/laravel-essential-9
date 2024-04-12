@@ -14,6 +14,9 @@ Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 Route::resource('/posts', PostController::class)->middleware(['auth', 'is_admin']);
 Route::resource('/tags', TagController::class)->middleware(['auth', 'is_admin']);
 
+// Route::resource('/posts', PostController::class);
+// Route::resource('/tags', TagController::class);
+
 // Route::get('/contact', function () {
 //     Mail::to('test@email.com')->send(new TestMail());
 // });
